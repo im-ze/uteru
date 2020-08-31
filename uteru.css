@@ -1,0 +1,249 @@
+.body {
+    background-color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 100px;
+
+    min-width: 700px;
+ 
+}
+
+#header {
+    font-weight: bold;
+    font-family: "Kosugi";
+    font-size: 20px;
+    color: white;
+
+    background-color: rgb(169, 40, 224);
+    height: 30px;
+    margin-bottom: 1px;
+    padding: 2px;
+    grid-column-gap: 2px; 
+
+
+    text-align: center;
+    border: solid 1px #000000;
+
+    margin-left: 20px;
+    margin-right: 150px;
+    min-width: 706px;
+    max-width: 846px;
+}
+
+
+#explanation {
+    background-color: black;
+    display: grid;
+    padding: 1px; /*一番下の線　gridの線の太さの調整*/
+    grid-column-gap: 1px; /*中の線　gridの線の太さ調整*/
+    grid-row-gap: 1px; /*中の線　gridの線の太さ調整*/
+    grid-template-columns: 100px auto;
+    padding-bottom: 1px; 
+    padding-left: 1px;
+
+    margin-bottom: 1px;
+    margin-left: 20px;
+    margin-right: 150px;
+    min-width: 710px;
+    max-width: 850px;
+}
+
+.title {
+    font-weight: bold;
+    font-family: "Kosugi";
+    background-color: rgb(205, 236, 245);
+    font-size: 14px;
+    padding: 0.5px;
+    text-align: center;
+    line-height: 30px;
+}
+.item {
+    font-family: "monospace";
+    background-color: white;
+    font-size: 13px;
+    text-align: left;
+}
+
+#price {
+    background-color: black;
+    display: grid;
+    padding: 1px; /*一番下の線　gridの線の太さの調整*/
+    grid-column-gap: 1px; /*中の線　gridの線の太さ調整*/
+    grid-row-gap: 1px; /*中の線　gridの線の太さ調整*/
+    grid-template-columns: 150px auto 150px auto 150px auto;
+    padding-bottom: 0px; 
+    padding-left: 1px;
+
+    margin-left: 20px;
+    margin-right: 150px;
+    min-width: 710px;
+    max-width: 850px;
+}
+
+.price-subtitle {
+    font-weight: bold;
+    font-family: "Kosugi";
+    background-color: rgb(205, 236, 245);
+    font-size: 11px;
+    padding: 1px;
+    text-align: center;
+}
+
+.price {
+    font-family: "monospace";
+    background-color: white;
+    font-size: 12px;
+    padding: 1px;
+    text-align: right;
+}
+
+
+#grid /*投資一覧の表の全体*/ {
+    background-color: black;
+    display: grid;
+    padding-bottom: 0.5px; /*一番下の線　gridの線の太さの調整*/
+    padding-left: 1px;
+    padding: 1px;
+    grid-column-gap: 1px; /*中の線　gridの線の太さ調整*/
+    grid-row-gap: 1px; /*中の線　gridの線の太さ調整*/
+    grid-template-columns: 100px auto 150px 100px auto 120px;
+
+    margin-left: 20px;
+    margin-right: 150px;
+    min-width: 710px;
+    max-width: 850px;
+}
+
+.grid-title {
+    font-weight: bold;
+    font-family: "Kosugi";
+    background-color: rgb(205, 236, 245);
+    font-size: 14px;
+    padding: 0.5px;
+    text-align: center;
+    line-height: 100px;
+
+
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 9;
+  }
+
+.grid-subtitle {
+    font-weight: bold;
+    font-family: "Kosugi";
+    background-color: rgb(205, 236, 245);
+    font-size: 12px;
+    padding: 1px;
+    text-align: center;
+}
+
+.grid-item {
+    font-family: "monospace";
+    background-color: white;
+    font-size: 12px;
+    padding: 1px;
+    text-align: right;
+}
+
+.grid-itemLeft {
+    font-family: "monospace";
+    background-color: white;
+    font-size: 12px;
+    padding: 1px;
+    text-align: left;
+}
+
+.grid-item:hover, .grid-itemLeft:hover, .grid-main:hover, .price:hover, .item:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.grid-mainTitle {
+    font-family: "Kosugi";
+    background-color: rgb(205, 236, 245);
+    font-size: 12px;
+    text-align: center;
+
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 9;
+    grid-row-end: 10;
+
+    height: 400px;
+}
+
+.grid-main {
+    font-family: "monospace";
+    background-color: white;
+    font-size: 13px;
+    text-align: left;
+
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 9;
+    grid-row-end: 10;
+
+    height: 400px;
+}
+
+.grid-questionnaire {
+    font-weight: bold;
+    font-family: "Kosugi";
+    background-color: rgb(205, 236, 245);
+    font-size: 13px;
+    text-align: center;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 10;
+    grid-row-end: 10;
+
+    height: 20px;
+
+}
+
+.grid-quesBox1 {
+    font-family: "monospace";
+    background-color: white;
+    font-size: 13px;
+    text-align: center;
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 10;
+    grid-row-end: 11;
+
+    height: 20px;
+}
+
+.grid-quesBox2 {
+    font-family: "monospace";
+    background-color: white;
+    font-size: 13px;
+    text-align: center;
+
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 10;
+    grid-row-end: 11;
+
+    height: 20px;
+}
+
+.grid-quesBox3 {
+    font-family: "monospace";
+    background-color: white;
+    font-size: 13px;
+    text-align: center;
+
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 10;
+    grid-row-end: 11;
+
+    height: 20px;
+}
+
+select {
+    font-size: 12px
+}
